@@ -1,0 +1,24 @@
+nav .start-home,
+a:nth-child(3):hover ~ .animation {
+  width: 130px;
+  left: 200px;
+  background-color: #3498db;
+}
+
+form {
+  background: #8380b6;
+}
+
+.container {
+  padding: 16px;
+
+  background: #8380b6;
+}
+
+.conti {
+  background: #8380b6;
+}
+
+button {
+  background-color: #1c7c54;
+}
