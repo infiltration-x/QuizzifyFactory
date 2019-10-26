@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/question.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script>
+      $(".ques1").on("click", function(e) {
+        $(".ques1").toggleClass("qu1"); //you can list several class names
+        e.preventDefault();
+      });
+
+      $(document).ready(function() {
+        $("#show1").click(function() {
+          $("#ans1").toggle();
+        });
+      });
+      $(document).ready(function() {
+        $("#show2").click(function() {
+          $("#ans2").toggle();
+        });
+      });
+      $(document).ready(function() {
+        $("#show3").click(function() {
+          $("#ans3").toggle();
+        });
+      });
+      $(document).ready(function() {
+        $("#show4").click(function() {
+          $("#ans4").toggle();
+        });
+      });
+      $(document).ready(function() {
+        $("#show5").click(function() {
+          $("#ans5").toggle();
+        });
+      });
+      $(document).ready(function() {
+        $("#show6").click(function() {
+          $("#ans6").toggle();
+        });
+      });
+      $(document).ready(function() {
+        $("#show7").click(function() {
+          $("#ans7").toggle();
+        });
+      });
+      $(document).ready(function() {
+        $("#show8").click(function() {
+          $("#ans8").toggle();
+        });
+      });
+      $(document).ready(function() {
+        $("#show9").click(function() {
+          $("#ans9").toggle();
+        });
+      });
+      $(document).ready(function() {
+        $("#show10").click(function() {
+          $("#ans10").toggle();
+        });
+      });
+      $(document).ready(function() {
+        $("#show11").click(function() {
+          $("#ans11").toggle();
+        });
+      });
+      $(document).ready(function() {
+        $("#show12").click(function() {
+          $("#ans12").toggle();
+        });
+      });
+      $(document).ready(function() {
+        $("#show13").click(function() {
+          $("#ans13").toggle();
+        });
+      });
+      $(document).ready(function() {
+        $("#show14").click(function() {
+          $("#ans14").toggle();
+        });
+      });
+    </script>
+
+    <script>
+      function startTimer(duration, display) {
+        var timer = duration,
+          minutes,
+          seconds;
+        setInterval(function() {
+          minutes = parseInt(timer / 60, 10);
+          seconds = parseInt(timer % 60, 10);
+
+          minutes = minutes < 10 ? "0" + minutes : minutes;
+          seconds = seconds < 10 ? "0" + seconds : seconds;
+
+          display.textContent = minutes + ":" + seconds;
+
+          if (--timer < 0) {
+            timer = duration;
+          }
+        }, 1000);
+      }
+
+      window.onload = function() {
+        var fiveMinutes = 60 * 10,
+          display = document.querySelector("#time");
+        startTimer(fiveMinutes, display);
+      };
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <div class="logo">
+        <div class="logo_conti">
+          <img
+            class="img1"
+            src="../Images/Logo.png"
+            alt="logo"
+            width="40px"
+            height="40px"
+          />
+          <div class="name">Viva - Link</div>
+        </div>
+        <div class="timer">
+          <h2><span id="time"></span></h2>
+        </div>
+      </div>
+
+      <div class="red">
+        <div class="sidebar">
+          <div class="qsno" style="text-align: center">
+            1
+          </div>
+          <div class="qsno" style="text-align: center">
+            1
+          </div>
+          <div class="qsno" style="text-align: center">
+            1
+          </div>
+        </div>
+        <div class="mainqs">
+          <div id="show1" class="ques1">
+            <div class="question" style="display: table-cell">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
+            </div>
+          </div>
+
+          <div id="ans1" class="ans1">
+            <form class="answer">
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female <br />
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female
+            </form>
+          </div>
+          <div id="show2" class="ques1"></div>
+          <div id="ans2" class="ans1"></div>
+          <div id="show3" class="ques1"></div>
+          <div id="ans3" class="ans1"></div>
+          <div id="show4" class="ques1"></div>
+          <div id="ans4" class="ans1"></div>
+          <div id="show5" class="ques1"></div>
+          <div id="ans5" class="ans1"></div>
+          <div id="show6" class="ques1"></div>
+          <div id="ans6" class="ans1"></div>
+          <div id="show7" class="ques1"></div>
+          <div id="ans7" class="ans1"></div>
+          <div id="show8" class="ques1"></div>
+          <div id="ans8" class="ans1"></div>
+          <div id="show9" class="ques1"></div>
+          <div id="ans9" class="ans1"></div>
+          <div id="show10" class="ques1"></div>
+          <div id="ans10" class="ans1"></div>
+          <div id="show11" class="ques1"></div>
+          <div id="ans11" class="ans1"></div>
+          <div id="show12" class="ques1"></div>
+          <div id="ans12" class="ans1"></div>
+          <div id="show13" class="ques1"></div>
+          <div id="ans13" class="ans1"></div>
+          <div id="show14" class="ques1"></div>
+          <div id="ans14" class="ans1"></div>
+        </div>
+      </div>
+      <form action="#" method="post">
+        <button class="summit_button" type="submit">Summit</button>
+      </form>
+    </div>
+  </body>
+</html>

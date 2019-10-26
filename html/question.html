@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/question.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#show1").click(function() {
+          $("#ans1").toggle();
+        });
+      });
+            $(document).ready(function () {
+                $("#number1").click(function () {
+                  $("#ans1").toggle();
+                });
+              });
+                    $(document).ready(function () {
+                        $("#number2").click(function () {
+                          $("#ans1").toggle();
+                        });
+                      });
+                            $(document).ready(function () {
+                                $("#number3").click(function () {
+                                  $("#ans1").toggle();
+                                });
+                              });
+                                    $(document).ready(function() {
+        $("#number4").click(function() {
+          $("#ans1").toggle();
+        });
+      });
+            $(document).ready(function() {
+        $("#number5").click(function() {
+          $("#ans1").toggle();
+        });
+      });
+
+            $(document).ready(function () {
+                $("#number6").click(function () {
+                  $("#ans1").toggle();
+                });
+              });
+                    $(document).ready(function () {
+                        $("#show1").click(function () {
+                          $("#ans1").toggle();
+                        });
+                      });
+                            $(document).ready(function () {
+                                $("#show1").click(function () {
+                                  $("#ans1").toggle();
+                                });
+                              });
+                                    $(document).ready(function () {
+                                        $("#show1").click(function () {
+                                          $("#ans1").toggle();
+                                        });
+                                      });
+                                            $(document).ready(function () {
+                                                $("#show1").click(function () {
+                                                  $("#ans1").toggle();
+                                                });
+                                              });
+                                                    $(document).ready(function () {
+                                                        $("#show1").click(function () {
+                                                          $("#ans1").toggle();
+                                                        });
+                                                      });
+           $(document).ready(function () {
+              $("#show2").click(function () {
+                $("#ans2").toggle();
+              });
+            });
+            $(document).ready(function () {
+              $("#show3").click(function () {
+                $("#ans3").toggle();
+              });
+            });
+            $(document).ready(function () {
+              $("#show4").click(function () {
+                $("#ans4").toggle();
+              });
+            });
+            $(document).ready(function () {
+              $("#show5").click(function () {
+                $("#ans5").toggle();
+              });
+            });
+            $(document).ready(function () {
+              $("#show6").click(function () {
+                $("#ans6").toggle();
+              });
+            });
+            $(document).ready(function () {
+              $("#show7").click(function () {
+                $("#ans7").toggle();
+              });
+            });
+            $(document).ready(function () {
+              $("#show8").click(function () {
+                $("#ans8").toggle();
+              });
+            });
+            $(document).ready(function () {
+              $("#show9").click(function () {
+                $("#ans9").toggle();
+              });
+            });
+            $(document).ready(function () {
+              $("#show10").click(function () {
+                $("#ans10").toggle();
+              });
+            });
+            $(document).ready(function () {
+              $("#show11").click(function () {
+                $("#ans11").toggle();
+              });
+            });
+            $(document).ready(function () {
+              $("#show12").click(function () {
+                $("#ans12").toggle();
+              });
+            });
+            $(document).ready(function () {
+              $("#show13").click(function () {
+                $("#ans13").toggle();
+              });
+            });
+            $(document).ready(function () {
+              $("#show14").click(function () {
+                $("#ans14").toggle();
+              });
+            });
+    </script>
+
+    <script>
+      function startTimer(duration, display) {
+        var timer = duration,
+          minutes,
+          seconds;
+        setInterval(function() {
+          minutes = parseInt(timer / 60, 10);
+          seconds = parseInt(timer % 60, 10);
+
+          minutes = minutes < 10 ? "0" + minutes : minutes;
+          seconds = seconds < 10 ? "0" + seconds : seconds;
+
+          display.textContent = minutes + ":" + seconds;
+
+          if (--timer < 0) {
+            timer = duration;
+          }
+        }, 1000);
+      }
+
+      window.onload = function() {
+        var fiveMinutes = 60 * 10,
+          display = document.querySelector("#time");
+        startTimer(fiveMinutes, display);
+      };
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <div class="logo">
+        <div class="logo_conti">
+          <img
+            class="img1"
+            src="../Images/Logo.png"
+            alt="logo"
+            width="40px"
+            height="40px"
+          />
+          <div class="name">Viva - Link</div>
+        </div>
+        <div class="timer">
+          <h2><span id="time"></span></h2>
+        </div>
+      </div>
+
+      <div class="red" >
+        
+        <div class="sidebar">
+          
+          <div id="number1" class="qsno" style="text-align: center">
+            <div id="circle">1</div>
+          </div> 
+
+          <div id="number2"class="qsno" style="text-align: center">
+            <div id="circle">2</div>
+          </div>
+          
+          <div id="number3"class="qsno" style="text-align: center">
+           <div id="circle">3</div>
+          </div>
+
+          <div id="number4"class="qsno" style="text-align: center">
+            <div id="circle">4</div>
+          </div>
+
+          <div id="number5" class="qsno" style="text-align: center">
+            <div id="circle">5</div>
+          </div>
+
+          <div id="number6"class="qsno" style="text-align: center">
+            <div id="circle">6</div>
+          </div>
+
+          <div id="number7"class="qsno" style="text-align: center">
+            <div id="circle">7</div>
+          </div>
+
+          <div id="number8"class="qsno" style="text-align: center">
+            <div id="circle">8</div>
+          </div>
+
+          <div id="number9"class="qsno" style="text-align: center">
+            <div id="circle">9</div>
+          </div>
+          <div id="number10"class="qsno" style="text-align: center">
+            <div id="circle">10</div>
+          </div>
+          <div id="number11"class="qsno" style="text-align: center">
+            <div id="circle">11</div>
+          </div>
+
+          <div id="number12"class="qsno" style="text-align: center">
+            <div id="circle">12</div>
+          </div>
+
+          <div id="number13"class="qsno" style="text-align: center">
+            <div id="circle">13</div>
+          </div>
+
+          <div id="number14"class="qsno" style="text-align: center">
+            <div id="circle">14</div>
+          </div>
+
+          <div id="number15"class="qsno" style="text-align: center">
+            <div id="circle">15</div>
+          </div>
+
+          <div id="number16"class="qsno" style="text-align: center">
+            <div id="circle">16</div>
+          </div>
+
+ 
+          <div id="number17"class="qsno" style="text-align: center">
+            <div id="circle">17</div>
+          </div>
+          <div id="number18"class="qsno" style="text-align: center">
+            <div id="circle">18</div>
+          </div>
+          
+          <div id="number19"class="qsno" style="text-align: center">
+            <div id="circle">19</div>
+          </div>
+
+          <div id="number20"class="qsno" style="text-align: center">
+            <div id="circle">20</div>
+          </div>
+        </div>
+        
+        <div class="answindow">
+          
+          <div id="show1" class="ques1">
+            <div class="question">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+      
+            </div>
+          </div>
+
+          <div id="ans1" class="ans1">
+            <form class="answer">
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female <br />
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female
+            </form>
+          </div>
+
+          <div id="show2" class="ques1">
+            <div class="question">
+              facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              facilis, obcaecati illo iusto eaque unde repellat culpa incidun
+            </div>
+          </div>
+          
+          <div id="ans2" class="ans1">
+            <form class="answer">
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female <br />
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female
+            </form>
+          </div>
+
+          <div id="show3" class="ques1">
+            <div class="question">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          
+            </div>
+          </div>
+
+          <div id="ans3" class="ans1">
+            <form class="answer">
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female <br />
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female
+            </form>
+          </div>
+          <div id="show4" class="ques1">
+            <div class="question">
+            facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+            facilis, obcaecati illo iusto eaque unde repellat culpa incidun
+          
+            </div>
+          </div>
+          
+          <div id="ans4" class="ans1">
+            <form class="answer">
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female <br />
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female
+            </form>
+          </div>
+          <div id="show5" class="ques1">
+            <div class="question">
+            
+          facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+          facilis, obcaecati illo iusto eaque unde repellat culpa incidun
+            </div>
+          </div>
+          
+          <div id="ans5" class="ans1">
+            <form class="answer">
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female <br />
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female
+            </form>
+          </div>
+          <div id="show6" class="ques1">
+            <div class="question">
+facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+facilis, obcaecati illo iusto eaque unde repellat culpa incidun
+          
+            </div>
+          </div>
+          
+          <div id="ans6" class="ans1">
+            <form class="answer">
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female <br />
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female
+            </form>
+          </div>
+          <div id="show7" class="ques1">
+            <div class="question">
+facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+facilis, obcaecati illo iusto eaque unde repellat culpa incidun
+          
+            </div>
+          </div>
+          
+          <div id="ans7" class="ans1">
+            <form class="answer">
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female <br />
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female
+            </form>
+          </div>
+          <div id="show8" class="ques1">
+            <div class="question">
+facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+facilis, obcaecati illo iusto eaque unde repellat culpa incidun
+          
+            </div>
+          </div>
+          
+          <div id="ans8" class="ans1">
+            <form class="answer">
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female <br />
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female
+            </form>
+          </div>
+          
+          <div id="show9" class="ques1">
+            <div class="question">
+            
+          facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+          facilis, obcaecati illo iusto eaque unde repellat culpa incidun
+            </div>
+          </div>
+          
+          <div id="ans9" class="ans1">
+            <form class="answer">
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female <br />
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female
+            </form>
+          </div>
+          <div id="show10" class="ques1">
+            <div class="question">
+            facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+            facilis, obcaecati illo iusto eaque unde repellat culpa incidun
+          
+            </div>
+          </div>
+          
+          <div id="ans10" class="ans1">
+            <form class="answer">
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female <br />
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female
+            </form>
+          </div>
+          <div id="show11" class="ques1">
+            <div class="question">
+facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+facilis, obcaecati illo iusto eaque unde repellat culpa incidun
+          
+            </div>
+          </div>
+          
+          <div id="ans11" class="ans1">
+            <form class="answer">
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female <br />
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female
+            </form>
+          </div>
+          <div id="show12" class="ques1">
+            <div class="question">
+            facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+            facilis, obcaecati illo iusto eaque unde repellat culpa incidun
+          
+            </div>
+          </div>
+          
+          <div id="ans12" class="ans1">
+            <form class="answer">
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female <br />
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female
+            </form>
+          </div>
+          <div id="show13" class="ques1">
+            <div class="question">
+            facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+            facilis, obcaecati illo iusto eaque unde repellat culpa incidun
+          
+            </div>
+          </div>
+          
+          <div id="ans13" class="ans1">
+            <form class="answer">
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female <br />
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female
+            </form>
+          </div>
+          <div id="show14" class="ques1">
+            <div class="question">
+  
+          facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+          facilis, obcaecati illo iusto eaque unde repellat culpa incidun
+            </div>
+          </div>
+          
+          <div id="ans14" class="ans1">
+            <form class="answer">
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female <br />
+              <input checked="checked" name="sex" type="radio" value="male" />
+              Male <br />
+              <input name="sex" type="radio" value="female" /> Female
+            </form>
+          </div>
+          <div id="show15" class="ques1">
+            <div class="question">
+            facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+            facilis, obcaecati illo iusto eaque unde repellat culpa incidun
+          
+            </div>
+          </div>
+          
+
+
+
+        </div>
+      
+      </div>
+  </body>
+</html>

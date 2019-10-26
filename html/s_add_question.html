@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/question.css" />
+    <link rel="stylesheet" href="../css/question copy.css">
+    <link rel="stylesheet" href="../css/s_main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <script src="../css/s_main.js"></script>
+
+    
+  </head>
+
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&times;</a>
+       <div class="menu"> Menu</div>
+      <a href="./s_home.html">Home</a>
+      <a href="./s_all_question.html" >All Questions</a>
+      <a href="./s_students.html">History</a>
+      <a href="./s_registered_student.html">Registered Students</a>
+      <a href="./s_add_question.html" style="color: white">Add Questions</a>
+      <a href="./s_add_student.html">Add Students</a>
+      <a href="#">Logout</a>
+    </div>
+    
+   
+   <div class="hamburger">
+      <span onclick="openNav()"><img src="../Images/Hamburger_icon.svg.png" height="50px" width="50px"
+          alt="Hamburger_icon" /></span>
+   </div>
+ 
+  
+<div id="main" onclick="closeNav()">
+    <div>
+      <div class="logo">
+        <div class="logo_conti">
+          <img
+            class="img1"
+            src="../Images/Logo.png"
+            alt="logo"
+            width="40px"
+            height="40px"
+          />
+          <div class="name">Viva - Link</div>
+        </div>
+        <div class="timer">
+          <h2><span id="time"></span></h2>
+        </div>
+      </div>
+
+      <div class="red">
+     <br>
+              <div class="container">
+                <h2>Add a question...</h2>
+                <form method="post" action="">
+                  <p>
+                    <label style="margin-top: 8px;">Question</label>
+                    <input class="qsin" type="text" name="question" required="" />
+                  </p>
+                  <p>
+                    <label>Choice #1</label>
+                    <input type="text" name="choice1" required="" />
+                  </p>
+                  <p>
+                    <label>Choice #2</label>
+                    <input type="text" name="choice2" required="" />
+                  </p>
+                  <p>
+                    <label>Choice #3</label>
+                    <input type="text" name="choice3" required="" />
+                  </p>
+                  <p>
+                    <label>Choice #4</label>
+                    <input type="text" name="choice4" required="" />
+                  </p>
+                  <p class="opt">
+                    <label style="width: 105px;">Correct answer : </label>
+                    <select name="answer" style="width: 90px; padding: 2px">
+                      <option value="a">Choice #1 </option>
+                      <option value="b">Choice #2</option>
+                      <option value="c">Choice #3</option>
+                      <option value="d">Choice #4</option>
+                    </select>
+                  </p>
+                  <p>
+                    
+                     <input class="butto" type="submit" name="submit" value="Submit" />
+                    
+                   
+                  </p>
+                </form>
+              </div>
+    
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
