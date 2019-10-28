@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="../css/home.css" />
     <link rel="stylesheet" href="../css/question.css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../css/s_main.js"></script>
 
     <script>
+      
       $(document).ready(function() {
-        $("#show1").click(function() {
+        $("#div1").click(function() {
           $("#ans1").toggle();
         });
       });
@@ -269,28 +271,38 @@
         
         <div class="answindow">
           
-          <div id="show1" class="ques1">
+          <div id="div1" class="ques1" onclick="myfunc(this)">
+            <div class="questionno1">
+              
+            </div>
             <div class="question">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-              facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-              facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-              facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+            Consider the usual algorithm for determining whether a sequence of parentheses is balanced.
+            The maximum number of parentheses that appear on the stack AT ANY ONE TIME when the algorithm analyzes: (()(())(()))
+            are:
       
             </div>
           </div>
 
           <div id="ans1" class="ans1">
-            <form class="answer">
-              <input checked="checked" name="sex" type="radio" value="male" />
-              Male <br />
-              <input name="sex" type="radio" value="female" /> Female <br />
-              <input checked="checked" name="sex" type="radio" value="male" />
-              Male <br />
-              <input name="sex" type="radio" value="female" /> Female
-            </form>
+        <label class="container">One
+         <input type="radio" name="radio">
+           <span class="checkmark"></span>
+        </label>
+        <label class="container">Two
+              <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+                    <label class="container">Three
+              <input type="radio" name="radio">
+           <span class="checkmark"></span>
+      </label>
+              <label class="container">Four
+            <input type="radio" name="radio">
+       <span class="checkmark"></span>
+                    </label>
+              <button type="button" class="submit" id= "submit" id="div1"onclick="submit()">Submit</button>
+
+       
           </div>
 
           <div id="show2" class="ques1">
