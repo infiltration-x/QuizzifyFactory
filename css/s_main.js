@@ -29,8 +29,33 @@ function myfunc(div2) {
   }
 }
 
-function submit(div1) {
-  document.getElementById("submit").textContent = "Submitted";
-  document.getElementById("submit").style.background = "#1c7c54";
-  document.getElementById("ans1").style.display = "none";
+function submit(di1) {
+  if (
+    document.getElementById("ra1").checked ||
+    document.getElementById("rb1").checked ||
+    document.getElementById("rc1").checked ||
+    document.getElementById("rd1").checked
+  ) {
+    document.getElementById("submit").textContent = "Submitted";
+    document.getElementById("submit").style.background = "#1c7c54";
+    document.getElementById("submit").style.cursor = "context-menu";
+
+    document.getElementById("questionno1").style.background = "white";
+    document.getElementById("tick1").style.display = "inline-block";
+    document.getElementById("div1").className = "ques1";
+    document.getElementById("circle1").style.background = "#1c7c54";
+  }
+}
+
+function review() {
+  if (document.getElementById("tick1").style.display == "none") {
+    document.getElementById("questionno1").style.background = "#D32E3F";
+
+    document.getElementById("circle1").style.background = "#D32E3F";
+
+    document.getElementById("div1").className = "ques1";
+  } else {
+    alert("Answer already submited");
+    document.getElementById("div1").className = "ques1";
+  }
 }

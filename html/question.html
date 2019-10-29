@@ -14,130 +14,34 @@
       
       $(document).ready(function() {
         $("#div1").click(function() {
-          $("#ans1").toggle();
+          $("#ans1").toggle(600);
         });
       });
-            $(document).ready(function () {
-                $("#number1").click(function () {
-                  $("#ans1").toggle();
-                });
-              });
-                    $(document).ready(function () {
-                        $("#number2").click(function () {
-                          $("#ans1").toggle();
-                        });
-                      });
-                            $(document).ready(function () {
-                                $("#number3").click(function () {
-                                  $("#ans1").toggle();
-                                });
-                              });
-                                    $(document).ready(function() {
-        $("#number4").click(function() {
-          $("#ans1").toggle();
-        });
-      });
+    
+      $(document).ready(function () {
+       $("#number1").click(function () {
+         
+          $("#ans1").slideToggle(600);
+         });
+          });
             $(document).ready(function() {
-        $("#number5").click(function() {
-          $("#ans1").toggle();
+        $("#submit").click(function() {
+            if (
+            document.getElementById("ra1").checked ||
+            document.getElementById("rb1").checked ||
+            document.getElementById("rc1").checked ||
+            document.getElementById("rd1").checked
+          ) {
+          $("#ans1").slideUp(600);
+          }
         });
       });
-
-            $(document).ready(function () {
-                $("#number6").click(function () {
-                  $("#ans1").toggle();
-                });
-              });
-                    $(document).ready(function () {
-                        $("#show1").click(function () {
-                          $("#ans1").toggle();
-                        });
-                      });
-                            $(document).ready(function () {
-                                $("#show1").click(function () {
-                                  $("#ans1").toggle();
-                                });
-                              });
-                                    $(document).ready(function () {
-                                        $("#show1").click(function () {
-                                          $("#ans1").toggle();
-                                        });
-                                      });
-                                            $(document).ready(function () {
-                                                $("#show1").click(function () {
-                                                  $("#ans1").toggle();
-                                                });
-                                              });
-                                                    $(document).ready(function () {
-                                                        $("#show1").click(function () {
-                                                          $("#ans1").toggle();
-                                                        });
-                                                      });
-           $(document).ready(function () {
-              $("#show2").click(function () {
-                $("#ans2").toggle();
-              });
-            });
-            $(document).ready(function () {
-              $("#show3").click(function () {
-                $("#ans3").toggle();
-              });
-            });
-            $(document).ready(function () {
-              $("#show4").click(function () {
-                $("#ans4").toggle();
-              });
-            });
-            $(document).ready(function () {
-              $("#show5").click(function () {
-                $("#ans5").toggle();
-              });
-            });
-            $(document).ready(function () {
-              $("#show6").click(function () {
-                $("#ans6").toggle();
-              });
-            });
-            $(document).ready(function () {
-              $("#show7").click(function () {
-                $("#ans7").toggle();
-              });
-            });
-            $(document).ready(function () {
-              $("#show8").click(function () {
-                $("#ans8").toggle();
-              });
-            });
-            $(document).ready(function () {
-              $("#show9").click(function () {
-                $("#ans9").toggle();
-              });
-            });
-            $(document).ready(function () {
-              $("#show10").click(function () {
-                $("#ans10").toggle();
-              });
-            });
-            $(document).ready(function () {
-              $("#show11").click(function () {
-                $("#ans11").toggle();
-              });
-            });
-            $(document).ready(function () {
-              $("#show12").click(function () {
-                $("#ans12").toggle();
-              });
-            });
-            $(document).ready(function () {
-              $("#show13").click(function () {
-                $("#ans13").toggle();
-              });
-            });
-            $(document).ready(function () {
-              $("#show14").click(function () {
-                $("#ans14").toggle();
-              });
-            });
+        $(document).ready(function () {
+          $("#review").click(function () {
+            $("#ans1").slideToggle(600);
+          });
+        });
+      
     </script>
 
     <script>
@@ -191,89 +95,89 @@
         <div class="sidebar">
           
           <div id="number1" class="qsno" style="text-align: center">
-            <div id="circle">1</div>
+            <div id="circle1" class="circle">1</div>
           </div> 
 
           <div id="number2"class="qsno" style="text-align: center">
-            <div id="circle">2</div>
+            <div class="circle">2</div>
           </div>
           
           <div id="number3"class="qsno" style="text-align: center">
-           <div id="circle">3</div>
+           <div class="circle">3</div>
           </div>
 
           <div id="number4"class="qsno" style="text-align: center">
-            <div id="circle">4</div>
+            <div class="circle">4</div>
           </div>
 
           <div id="number5" class="qsno" style="text-align: center">
-            <div id="circle">5</div>
+            <div class="circle">5</div>
           </div>
 
           <div id="number6"class="qsno" style="text-align: center">
-            <div id="circle">6</div>
+            <div class="circle">6</div>
           </div>
 
           <div id="number7"class="qsno" style="text-align: center">
-            <div id="circle">7</div>
+            <div class="circle">7</div>
           </div>
 
           <div id="number8"class="qsno" style="text-align: center">
-            <div id="circle">8</div>
+            <div class="circle">8</div>
           </div>
 
           <div id="number9"class="qsno" style="text-align: center">
-            <div id="circle">9</div>
+            <div class="circle">9</div>
           </div>
           <div id="number10"class="qsno" style="text-align: center">
-            <div id="circle">10</div>
+            <div class="circle">10</div>
           </div>
           <div id="number11"class="qsno" style="text-align: center">
-            <div id="circle">11</div>
+            <div class="circle">11</div>
           </div>
 
           <div id="number12"class="qsno" style="text-align: center">
-            <div id="circle">12</div>
+            <div class="circle">12</div>
           </div>
 
           <div id="number13"class="qsno" style="text-align: center">
-            <div id="circle">13</div>
+            <div class="circle">13</div>
           </div>
 
           <div id="number14"class="qsno" style="text-align: center">
-            <div id="circle">14</div>
+            <div class="circle">14</div>
           </div>
 
           <div id="number15"class="qsno" style="text-align: center">
-            <div id="circle">15</div>
+            <div class="circle">15</div>
           </div>
 
           <div id="number16"class="qsno" style="text-align: center">
-            <div id="circle">16</div>
+            <div class="circle">16</div>
           </div>
 
  
           <div id="number17"class="qsno" style="text-align: center">
-            <div id="circle">17</div>
+            <div class="circle">17</div>
           </div>
           <div id="number18"class="qsno" style="text-align: center">
-            <div id="circle">18</div>
+            <div class="circle">18</div>
           </div>
           
           <div id="number19"class="qsno" style="text-align: center">
-            <div id="circle">19</div>
+            <div class="circle">19</div>
           </div>
 
           <div id="number20"class="qsno" style="text-align: center">
-            <div id="circle">20</div>
+            <div class="circle">20</div>
           </div>
         </div>
         
         <div class="answindow">
           
           <div id="div1" class="ques1" onclick="myfunc(this)">
-            <div class="questionno1">
-              
+            <div id ="questionno1" class="questionno1">
+             <img  id="tick1" src="../images/green-check-mark-2-icon-17.png" width="19px" height="19px" alt="" style="margin-top: -3px;margin-left: -1px; display: none;">
             </div>
             <div class="question">
             Consider the usual algorithm for determining whether a sequence of parentheses is balanced.
@@ -282,26 +186,26 @@
       
             </div>
           </div>
-
+       
           <div id="ans1" class="ans1">
         <label class="container">One
-         <input type="radio" name="radio">
+         <input type="radio" id="ra1" name="radio" value="One">
            <span class="checkmark"></span>
         </label>
         <label class="container">Two
-              <input type="radio" name="radio">
+              <input type="radio" id="rb1" name="radio" value="Two">
                   <span class="checkmark"></span>
                 </label>
                     <label class="container">Three
-              <input type="radio" name="radio">
+              <input type="radio"id="rc1" name="radio" value="Three">
            <span class="checkmark"></span>
       </label>
               <label class="container">Four
-            <input type="radio" name="radio">
+            <input type="radio" id="rd1" name="radio" value="Four">
        <span class="checkmark"></span>
                     </label>
-              <button type="button" class="submit" id= "submit" id="div1"onclick="submit()">Submit</button>
-
+              <button type="button" class="submit" id= "submit" id="di1"onclick="submit()">Submit</button>
+              <button type="button" class="review" id="review" onclick="review()">Review</button>
        
           </div>
 
