@@ -1,7 +1,7 @@
 .sidebar {
   background: #1c7c54;
   width: 67px;
-  height: 81vh;
+  height: 78vh;
   border-spacing: 0px;
   overflow-y: scroll;
   float: left;
@@ -35,8 +35,8 @@
 }
 
 .timer {
-  float: left;
   position: absolute;
+  top: 25px;
   right: 40px;
   color: white;
   background: #1c7c54;
@@ -48,16 +48,6 @@
   align-self: auto;
   width: 280px;
   float: left;
-}
-
-@media screen and (max-width: 810px) {
-  .logo_conti {
-    left: 0;
-  }
-  .timer {
-    right: 10px;
-    width: 150px;
-  }
 }
 
 .qsno {
@@ -95,7 +85,7 @@
 }
 .answindow {
   width: calc(100% - 67px);
-  height: 81vh;
+  height: 78vh;
   background: grey;
   float: left;
   overflow-y: scroll;
@@ -265,6 +255,17 @@ button {
   background-color: #d64256;
   width: 88px;
 }
+.resume {
+  border-radius: 20px;
+  margin-top: 20px;
+  width: auto;
+  padding: 6px 13px;
+  background-color: #1c7c54;
+  width: 93px;
+}
+.resume:hover {
+  background: #6ab176;
+}
 button:focus {
   outline: 1;
 }
@@ -288,4 +289,61 @@ button:focus {
 
 .review:hover {
   background-color: #717dbe;
+}
+
+.red {
+  height: 78vh;
+}
+
+.fsubmit {
+  border-radius: 20px;
+  margin-top: 10px;
+  width: auto;
+  padding: 6px 13px;
+  background-color: white;
+  color: #1c7c54;
+  width: 97px;
+  float: right;
+  margin-right: 70px;
+  font: bolder;
+}
+
+.alert {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+  width: 600px;
+  height: 250px;
+  background: white;
+  position: absolute;
+  top: calc(50% - 125px);
+  left: calc(50% - 300px);
+  z-index: 1;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.wholebody {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.ins {
+  display: inline-block;
+  position: absolute;
+  top: 30.5px;
+  left: 30.5px;
+}
+@media screen and (max-width: 810px) {
+  .logo_conti {
+    left: 0;
+  }
+  .timer {
+    right: 10px;
+    width: 150px;
+  }
+  .ins {
+    display: none;
+  }
 }

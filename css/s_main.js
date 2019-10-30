@@ -20,6 +20,7 @@ function myfunc(div1) {
     div1.className = "ques1";
   }
 }
+
 function myfunc(div2) {
   var className = div2.getAttribute("class");
   if (className == "ques1") {
@@ -49,13 +50,30 @@ function submit(di1) {
 
 function review() {
   if (document.getElementById("tick1").style.display == "none") {
-    document.getElementById("questionno1").style.background = "#D32E3F";
+    document.getElementById("questionno1").style.background = "#434e8d";
 
-    document.getElementById("circle1").style.background = "#D32E3F";
-
-    document.getElementById("div1").className = "ques1";
-  } else {
-    alert("Answer already submited");
+    document.getElementById("circle1").style.background = "#434e8d";
+    $("#ans1").toggle(500);
     document.getElementById("div1").className = "ques1";
   }
+}
+
+function resume() {
+  document.getElementById("alert").style.opacity = "0";
+  document.getElementById("wholebody").style.opacity = "1";
+  document.getElementById("wholebody").style.pointerEvents = "auto";
+}
+
+function info() {
+  document.getElementById("info").style.visibility = "visible";
+  document.getElementById("info").style.opacity = "1";
+  document.getElementById("wholebody").style.opacity = ".65";
+  document.getElementById("wholebody").style.pointerEvents = "none";
+}
+
+function infoe() {
+  document.getElementById("info").style.visibility = "hidden";
+  document.getElementById("info").style.opacity = "0";
+  document.getElementById("wholebody").style.opacity = "1";
+  document.getElementById("wholebody").style.pointerEvents = "auto";
 }
