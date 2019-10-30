@@ -78,7 +78,7 @@
 .qsno:hover {
   background: white;
 }
-#circle {
+.circle {
   margin: 12px;
   text-align: center;
   line-height: 24px;
@@ -91,6 +91,7 @@
   border-style: solid;
   border-color: white;
   border-width: 2px;
+  cursor: pointer;
 }
 .answindow {
   width: calc(100% - 67px);
@@ -153,7 +154,7 @@
   border-style: solid;
   border-color: white;
   border-bottom: 0;
-  min-height: 150px;
+  height: 190px;
 }
 
 .answer {
@@ -165,8 +166,8 @@
 }
 
 .questionno1 {
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   outline: 0;
   margin-top: 20px;
   margin-left: 13px;
@@ -177,6 +178,7 @@
   border-width: 2px;
   border-color: grey;
   cursor: pointer;
+  background: white;
 }
 .container {
   display: block;
@@ -260,12 +262,30 @@ button {
   margin-top: 20px;
   width: auto;
   padding: 6px 13px;
-  background-color: #cf4f60;
+  background-color: #d64256;
   width: 88px;
 }
 button:focus {
   outline: 1;
 }
 .submit:hover {
-  background-color: #df7f78;
+  background-color: #e77a72;
+}
+
+.tick {
+  font-size: 12px;
+}
+
+.review {
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: auto;
+  padding: 6px 13px;
+  background-color: #434e8d;
+  width: 88px;
+}
+
+.review:hover {
+  background-color: #717dbe;
 }
