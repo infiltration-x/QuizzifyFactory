@@ -14,16 +14,13 @@
       
       $(document).ready(function() {
         $("#div1").click(function() {
-          $("#ans1").toggle(600);
+          $("#ans1").toggle(500);
         });
       });
-    
-      $(document).ready(function () {
-       $("#number1").click(function () {
-         
-          $("#ans1").slideToggle(600);
-         });
-          });
+    $(document).on('click', '#number1', function (event) {
+        event.preventDefault();
+        $("#div1").click();
+      });
             $(document).ready(function() {
         $("#submit").click(function() {
             if (
@@ -32,15 +29,11 @@
             document.getElementById("rc1").checked ||
             document.getElementById("rd1").checked
           ) {
-          $("#ans1").slideUp(600);
+          $("#ans1").slideToggle(500);
           }
         });
       });
-        $(document).ready(function () {
-          $("#review").click(function () {
-            $("#ans1").slideToggle(600);
-          });
-        });
+
       
     </script>
 
@@ -61,11 +54,19 @@
           if (--timer < 0) {
             timer = duration;
           }
+          if(timer == 60){
+             document.getElementById("time").style.color = "#800000";
+             document.getElementById("alert").style.visibility = "visible";
+             document.getElementById("alert").style.opacity = "1";
+             document.getElementById("wholebody").style.opacity=".65";
+             document.getElementById("wholebody").style.pointerEvents = "none";
+
+          }
         }, 1000);
       }
 
       window.onload = function() {
-        var fiveMinutes = 60 * 10,
+        var fiveMinutes = 60 * 1.2,
           display = document.querySelector("#time");
         startTimer(fiveMinutes, display);
       };
@@ -73,8 +74,17 @@
   </head>
 
   <body>
-    <div>
+    <div id="alert" class="alert">
+       <span class="minute" style="display: block; margin-top: 85px;">Only 1 Minute Remains</span>  
+      <button type="button" class="resume" id="resume" style="margin-top: 50px;" onclick="resume()">Resume</button>
+   </div>
+      <div id="info" class="alert">
+      <span class="minute" style="display: block; margin-top: 85px;">These are the instuctions</span>
+        <button type="button" class="resume" id="resume1" style="display: inline-block; margin-top: 50px;" onclick="infoe()">Resume</button>
+      </div>
+    <div id="wholebody">
       <div class="logo">
+        <div  class="ins" id="info" onclick="resume1()"><img src="../images/information.jpg" style="opacity: .7;cursor: pointer" width="40px" height="40px" alt="instruction" onclick="info()"></div>
         <div class="logo_conti">
           <img
             class="img1"
@@ -83,10 +93,10 @@
             width="40px"
             height="40px"
           />
-          <div class="name">Viva - Link</div>
+          <div class="name" style="cursor: context-menu">Viva - Link</div>
         </div>
         <div class="timer">
-          <h2><span id="time"></span></h2>
+          <h2><span id="time" style="cursor: context-menu;"></span></h2>
         </div>
       </div>
 
@@ -172,7 +182,9 @@
             <div class="circle">20</div>
           </div>
         </div>
-        
+        <div id="alert" class="alert">
+          adasd
+        </div>
         <div class="answindow">
           
           <div id="div1" class="ques1" onclick="myfunc(this)">
@@ -468,9 +480,9 @@ facilis, obcaecati illo iusto eaque unde repellat culpa incidun
           
 
 
-
         </div>
       
       </div>
+      <button type="button" class="fsubmit" id="fsubmit" onclick="submit()">Submit</button>
   </body>
 </html>

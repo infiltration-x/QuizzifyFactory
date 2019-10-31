@@ -4,7 +4,7 @@
   margin: 0px;
 }
 .img1 {
-  vertical-align: center;
+  vertical-align: middle;
 }
 .logo {
   font-size: 2.5rem;
@@ -19,7 +19,7 @@
   text-transform: initial;
   text-align: center;
   color: white;
-  cursor: pointer;
+
   position: relative;
 
   margin-left: 10px;
