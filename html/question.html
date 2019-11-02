@@ -66,7 +66,7 @@
       }
 
       window.onload = function() {
-        var fiveMinutes = 60 * 1.2,
+        var fiveMinutes = 60 * 5,
           display = document.querySelector("#time");
         startTimer(fiveMinutes, display);
       };
@@ -84,16 +84,16 @@
       </div>
     <div id="wholebody">
       <div class="logo">
-        <div  class="ins" id="info" onclick="resume1()"><img src="../images/information.jpg" style="opacity: .7;cursor: pointer" width="40px" height="40px" alt="instruction" onclick="info()"></div>
+        <div  class="ins" id="info" onclick="resume1()"><img src="../images/ins_icon.png" style="cursor: pointer" width="40px" height="40px" alt="instruction" onclick="info()"></div>
         <div class="logo_conti">
           <img
             class="img1"
-            src="../Images/Logo.png"
+            src="../Images/subject-icon-12.jpg"
             alt="logo"
             width="40px"
             height="40px"
           />
-          <div class="name" style="cursor: context-menu">Viva - Link</div>
+        <div style="display: inline-block; height: 40px; line-height: 40px">VIVA - LINK</div>
         </div>
         <div class="timer">
           <h2><span id="time" style="cursor: context-menu;"></span></h2>
@@ -220,266 +220,44 @@
               <button type="button" class="review" id="review" onclick="review()">Review</button>
        
           </div>
-
-          <div id="show2" class="ques1">
+          <div id="div1" class="ques1" onclick="myfunc(this)">
+            <div id="questionno1" class="questionno1">
+              <img id="tick1" src="../images/green-check-mark-2-icon-17.png" width="19px" height="19px" alt=""
+                style="margin-top: -3px;margin-left: -1px; display: none;">
+            </div>
             <div class="question">
-              facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-              facilis, obcaecati illo iusto eaque unde repellat culpa incidun
+           <p>In Unix, Which system call creates the new process?</p> 
             </div>
           </div>
-          
-          <div id="ans2" class="ans1">
-            <form class="answer">
-              <input checked="checked" name="sex" type="radio" value="male" />
-              Male <br />
-              <input name="sex" type="radio" value="female" /> Female <br />
-              <input checked="checked" name="sex" type="radio" value="male" />
-              Male <br />
-              <input name="sex" type="radio" value="female" /> Female
-            </form>
-          </div>
-
-          <div id="show3" class="ques1">
+          <div id="div1" class="ques1" onclick="myfunc(this)">
+            <div id="questionno1" class="questionno1">
+              <img id="tick1" src="../images/green-check-mark-2-icon-17.png" width="19px" height="19px" alt=""
+                style="margin-top: -3px;margin-left: -1px; display: none;">
+            </div>
             <div class="question">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-              facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          
+            <p>Which system call returns the process identifier of a terminated child?</p> 
             </div>
           </div>
-
-          <div id="ans3" class="ans1">
-            <form class="answer">
-              <input checked="checked" name="sex" type="radio" value="male" />
-              Male <br />
-              <input name="sex" type="radio" value="female" /> Female <br />
-              <input checked="checked" name="sex" type="radio" value="male" />
-              Male <br />
-              <input name="sex" type="radio" value="female" /> Female
-            </form>
-          </div>
-          <div id="show4" class="ques1">
+          <div id="div1" class="ques1" onclick="myfunc(this)">
+            <div id="questionno1" class="questionno1">
+              <img id="tick1" src="../images/green-check-mark-2-icon-17.png" width="19px" height="19px" alt=""
+                style="margin-top: -3px;margin-left: -1px; display: none;">
+            </div>
             <div class="question">
-            facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-            facilis, obcaecati illo iusto eaque unde repellat culpa incidun
+          <p>The address of the next instruction to be executed by the current process is provided by the __________</p>    
           
             </div>
           </div>
-          
-          <div id="ans4" class="ans1">
-            <form class="answer">
-              <input checked="checked" name="sex" type="radio" value="male" />
-              Male <br />
-              <input name="sex" type="radio" value="female" /> Female <br />
-              <input checked="checked" name="sex" type="radio" value="male" />
-              Male <br />
-              <input name="sex" type="radio" value="female" /> Female
-            </form>
-          </div>
-          <div id="show5" class="ques1">
-            <div class="question">
-            
-          facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-          facilis, obcaecati illo iusto eaque unde repellat culpa incidun
+          <div id="div1" class="ques1" onclick="myfunc(this)">
+            <div id="questionno1" class="questionno1">
+              <img id="tick1" src="../images/green-check-mark-2-icon-17.png" width="19px" height="19px" alt=""
+                style="margin-top: -3px;margin-left: -1px; display: none;">
             </div>
-          </div>
-          
-          <div id="ans5" class="ans1">
-            <form class="answer">
-              <input checked="checked" name="sex" type="radio" value="male" />
-              Male <br />
-              <input name="sex" type="radio" value="female" /> Female <br />
-              <input checked="checked" name="sex" type="radio" value="male" />
-              Male <br />
-              <input name="sex" type="radio" value="female" /> Female
-            </form>
-          </div>
-          <div id="show6" class="ques1">
             <div class="question">
-facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-facilis, obcaecati illo iusto eaque unde repellat culpa incidun
+             <p>Which of the following is not the state of a process?</p> 
           
             </div>
           </div>
-          
-          <div id="ans6" class="ans1">
-            <form class="answer">
-              <input checked="checked" name="sex" type="radio" value="male" />
-              Male <br />
-              <input name="sex" type="radio" value="female" /> Female <br />
-              <input checked="checked" name="sex" type="radio" value="male" />
-              Male <br />
-              <input name="sex" type="radio" value="female" /> Female
-            </form>
-          </div>
-          <div id="show7" class="ques1">
-            <div class="question">
-facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-facilis, obcaecati illo iusto eaque unde repellat culpa incidun
-          
-            </div>
-          </div>
-          
-          <div id="ans7" class="ans1">
-            <form class="answer">
-              <input checked="checked" name="sex" type="radio" value="male" />
-              Male <br />
-              <input name="sex" type="radio" value="female" /> Female <br />
-              <input checked="checked" name="sex" type="radio" value="male" />
-              Male <br />
-              <input name="sex" type="radio" value="female" /> Female
-            </form>
-          </div>
-          <div id="show8" class="ques1">
-            <div class="question">
-facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-facilis, obcaecati illo iusto eaque unde repellat culpa incidun
-          
-            </div>
-          </div>
-          
-          <div id="ans8" class="ans1">
-            <form class="answer">
-              <input checked="checked" name="sex" type="radio" value="male" />
-              Male <br />
-              <input name="sex" type="radio" value="female" /> Female <br />
-              <input checked="checked" name="sex" type="radio" value="male" />
-              Male <br />
-              <input name="sex" type="radio" value="female" /> Female
-            </form>
-          </div>
-          
-          <div id="show9" class="ques1">
-            <div class="question">
-            
-          facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-          facilis, obcaecati illo iusto eaque unde repellat culpa incidun
-            </div>
-          </div>
-          
-          <div id="ans9" class="ans1">
-            <form class="answer">
-              <input checked="checked" name="sex" type="radio" value="male" />
-              Male <br />
-              <input name="sex" type="radio" value="female" /> Female <br />
-              <input checked="checked" name="sex" type="radio" value="male" />
-              Male <br />
-              <input name="sex" type="radio" value="female" /> Female
-            </form>
-          </div>
-          <div id="show10" class="ques1">
-            <div class="question">
-            facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-            facilis, obcaecati illo iusto eaque unde repellat culpa incidun
-          
-            </div>
-          </div>
-          
-          <div id="ans10" class="ans1">
-            <form class="answer">
-              <input checked="checked" name="sex" type="radio" value="male" />
-              Male <br />
-              <input name="sex" type="radio" value="female" /> Female <br />
-              <input checked="checked" name="sex" type="radio" value="male" />
-              Male <br />
-              <input name="sex" type="radio" value="female" /> Female
-            </form>
-          </div>
-          <div id="show11" class="ques1">
-            <div class="question">
-facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-facilis, obcaecati illo iusto eaque unde repellat culpa incidun
-          
-            </div>
-          </div>
-          
-          <div id="ans11" class="ans1">
-            <form class="answer">
-              <input checked="checked" name="sex" type="radio" value="male" />
-              Male <br />
-              <input name="sex" type="radio" value="female" /> Female <br />
-              <input checked="checked" name="sex" type="radio" value="male" />
-              Male <br />
-              <input name="sex" type="radio" value="female" /> Female
-            </form>
-          </div>
-          <div id="show12" class="ques1">
-            <div class="question">
-            facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-            facilis, obcaecati illo iusto eaque unde repellat culpa incidun
-          
-            </div>
-          </div>
-          
-          <div id="ans12" class="ans1">
-            <form class="answer">
-              <input checked="checked" name="sex" type="radio" value="male" />
-              Male <br />
-              <input name="sex" type="radio" value="female" /> Female <br />
-              <input checked="checked" name="sex" type="radio" value="male" />
-              Male <br />
-              <input name="sex" type="radio" value="female" /> Female
-            </form>
-          </div>
-          <div id="show13" class="ques1">
-            <div class="question">
-            facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-            facilis, obcaecati illo iusto eaque unde repellat culpa incidun
-          
-            </div>
-          </div>
-          
-          <div id="ans13" class="ans1">
-            <form class="answer">
-              <input checked="checked" name="sex" type="radio" value="male" />
-              Male <br />
-              <input name="sex" type="radio" value="female" /> Female <br />
-              <input checked="checked" name="sex" type="radio" value="male" />
-              Male <br />
-              <input name="sex" type="radio" value="female" /> Female
-            </form>
-          </div>
-          <div id="show14" class="ques1">
-            <div class="question">
-  
-          facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-          facilis, obcaecati illo iusto eaque unde repellat culpa incidun
-            </div>
-          </div>
-          
-          <div id="ans14" class="ans1">
-            <form class="answer">
-              <input checked="checked" name="sex" type="radio" value="male" />
-              Male <br />
-              <input name="sex" type="radio" value="female" /> Female <br />
-              <input checked="checked" name="sex" type="radio" value="male" />
-              Male <br />
-              <input name="sex" type="radio" value="female" /> Female
-            </form>
-          </div>
-          <div id="show15" class="ques1">
-            <div class="question">
-            facilis, obcaecati illo iusto eaque unde repellat culpa incidunt,
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-            facilis, obcaecati illo iusto eaque unde repellat culpa incidun
-          
-            </div>
-          </div>
-          
-
-
         </div>
       
       </div>

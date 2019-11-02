@@ -43,16 +43,17 @@ function submit(di1) {
 
     document.getElementById("questionno1").style.background = "white";
     document.getElementById("tick1").style.display = "inline-block";
+
     document.getElementById("div1").className = "ques1";
-    document.getElementById("circle1").style.background = "#1c7c54";
+    document.getElementById("circle1").style.background = "#39424e";
   }
 }
 
 function review() {
   if (document.getElementById("tick1").style.display == "none") {
-    document.getElementById("questionno1").style.background = "#434e8d";
+    //document.getElementById("questionno1").style.background = "red";
 
-    document.getElementById("circle1").style.background = "#434e8d";
+    document.getElementById("circle1").style.background = "red";
     $("#ans1").toggle(500);
     document.getElementById("div1").className = "ques1";
   }

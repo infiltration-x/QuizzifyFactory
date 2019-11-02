@@ -6,9 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link rel="stylesheet" href="../css/home.css" />
-    <link rel="stylesheet" href="../css/login.css" />
-    <link rel="icon" href="../Images/favicon.png" />
-    <link rel="stylesheet" href="../css/admin_login.css" />
+    <link rel="stylesheet" href="../css/box_design.css" />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      function fade() {
+        $("#form").fadeOut(300);
+        $(".wrapper").addClass("form-success");
+      }
+    </script>
+
+    <style>
+      nav .start-home,
+      a:nth-child(2):hover ~ .animation {
+        width: 130px;
+        left: 100px;
+        background-color: #e74c3c;
+      }
+      .red {
+        height: calc(100vh - 128px);
+      }
+    </style>
   </head>
   <body>
     <div>
@@ -16,16 +35,16 @@
         <div class="logo">
           <img
             class="img1"
-            src="../Images/Logo.png"
+            src="../Images/subject-icon-12.jpg"
             alt="logo"
             width="40px"
             height="40px"
           />
-          Viva - Link
+          <div style="display: inline-block;">VIVA - LINK</div>
         </div>
         <nav>
           <a href="./home.html">Home</a>
-          <a href="./login.html">Login</a>
+
           <a href="./admin_login.html">Admin login</a>
           <a href="./question.html">Question</a>
           <a href="./contact.html">Contact</a>
@@ -33,42 +52,49 @@
         </nav>
       </div>
       <div class="red">
-        <form action="action_page.php" method="post">
-          <div class="imgcontainer">
-            <a href="http://www.mec.ac.in/" target="_blank"
-              ><img src="../Images/MEC_logo.png" alt="Avatar" class="avatar"
-            /></a>
-          </div>
-
+        <div class="wrapper">
           <div class="container">
-            <label for="uname"><b>Admin Username</b></label>
-            <input
-              type="text"
-              placeholder="Enter Admin Username"
-              name="uname"
-              required
-            />
-
-            <label for="psw"><b>Admin Password</b></label>
-            <input
-              type="password"
-              placeholder="Enter Admin Password"
-              name="psw"
-              required
-            />
-
-            <button type="submit">Login</button>
-            <label>
-              <input type="checkbox" checked="checked" name="remember" />
-              Remember me
-            </label>
+            <form class="form">
+              <label
+                ><h1
+                  style="color:  #39424e;font-family:serif;  font-weight: bold; margin-bottom: 30px;"
+                >
+                  WELCOME
+                </h1>
+              </label>
+              <div id="form">
+                <input type="text" placeholder="Admin Username" />
+                <input type="password" placeholder="Admin Password" />
+                <button type="button" id="login-button" onclick="fade()">
+                  Login
+                </button>
+              </div>
+            </form>
           </div>
 
-          <div class="conti">
-            <button type="button" class="cancelbtn">Cancel</button>
-          </div>
-        </form>
+          <ul class="bg-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
       </div>
+      <div style="background: #39424e;height: 60px;"></div>
     </div>
   </body>
 </html>
