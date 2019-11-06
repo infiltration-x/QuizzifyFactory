@@ -278,7 +278,7 @@ button {
   width: 93px;
 }
 .resume:hover {
-  background: #6ab176;
+  background: #5a9664;
 }
 button:focus {
   outline: 1;
@@ -315,13 +315,16 @@ button:focus {
   width: auto;
   padding: 6px 13px;
   background-color: white;
-  color: #1c7c54;
+  color: #39424e;
+  font-weight: bold;
   width: 97px;
   float: right;
   margin-right: 70px;
   font: bolder;
 }
-
+.fsubmit:hover {
+  background: #d6cec6;
+}
 .alert {
   visibility: hidden;
   opacity: 0;
